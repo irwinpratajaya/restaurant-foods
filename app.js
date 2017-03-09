@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var foods = require('./routes/foods');
+var restaurants = require('./routes/restaurants');
+
 var mongoose = require('mongoose') // harus di inisialisasi manual
 mongoose.connect('mongodb://localhost/restaurant-foods') // harus di inisialisasi manual
 
@@ -27,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/foods', foods);
+app.use('/restaurants', restaurants);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

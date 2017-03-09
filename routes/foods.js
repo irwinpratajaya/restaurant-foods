@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var food = require('../controllers/food')
+var foods = require('../controllers/foods')
 
 
 router.get('/', foods.getFoods)
+
+router.get('/:id', foods.getOneFood)
 
 router.post('/', foods.addFoods)
 

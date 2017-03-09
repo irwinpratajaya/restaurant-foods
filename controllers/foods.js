@@ -8,6 +8,16 @@ foods.getFoods = function(req,res,next) {
   })
 }
 
+foods.getOneFood = function (req,res,next) {
+  food.find({_id: req.params.id}).then(function(err,data) {
+    if (err) {
+      res.send(err)
+    } else {
+      res.send(data)
+    }
+  })
+}
+
 foods.addFoods = function(req,res,next){
   food.create({
     name: req.body.name,
