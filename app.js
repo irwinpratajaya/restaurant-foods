@@ -14,11 +14,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/foods', foods);
 app.use('/restaurants', restaurants);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
-
 module.exports = app;
