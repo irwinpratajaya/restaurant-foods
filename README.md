@@ -31,3 +31,6 @@ With only npm:
 
 ### Access via Postman
 Run Postman and follow list routes to get, post, update and delete data
+
+
+######notes: format untuk input tanggal seperti: 2017-09-03T00:01:40.000Z
