@@ -26,7 +26,7 @@ Route		| HTTP	| Description
 ### Usage
 With only npm:
 >npm install
-	npm run dev
+>npm run dev
 
 ### Access via Postman
 Run Postman and follow list routes to get, post, update and delete data
